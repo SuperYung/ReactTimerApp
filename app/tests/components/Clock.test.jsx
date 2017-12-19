@@ -8,7 +8,7 @@ var Clock = require('Clock');
 
 describe('Clock', () => {
   it('should exist', () => {
-      expect(Clock).toExist();
+    expect(Clock).toExist();
   });
 
   describe('render', () => {
@@ -21,7 +21,7 @@ describe('Clock', () => {
     });
   });
 
-  describe('formateSeconds', () => {
+  describe('formatSeconds', () => {
     it('should format seconds', () => {
       var clock = TestUtils.renderIntoDocument(<Clock/>);
       var seconds = 615;
@@ -40,5 +40,4 @@ describe('Clock', () => {
       expect(actual).toBe(expected);
     });
   });
-
 });
